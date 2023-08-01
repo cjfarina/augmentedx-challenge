@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { motion } from 'framer-motion';
 import getConfig from 'next/config';
 import Head from 'next/head';
-import { useCallback, useState } from 'react';
+import { ChangeEvent, useCallback, useState } from 'react';
 import useSWR from 'swr';
 
 import { Cards } from '@/components/Cards';
@@ -21,7 +21,7 @@ const Home = ({ version }: { version: string }) => {
     axios(`/api/pokemons`),
   );
 
-  const handleSearch = useCallback((event) => {
+  const handleSearch = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     setView('cards');
     setSearch(event.target.value);
   }, []);
