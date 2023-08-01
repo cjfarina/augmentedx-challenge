@@ -15,14 +15,14 @@ export type PokemonStats = {
 };
 
 export type Pokemon = {
-  id: string;
+  id: number;
   name: PokemonName;
   type: string[];
   stats: PokemonStats;
 };
 
 export type SerializedPokemon = Omit<Pokemon, 'name'> & {
-  id: string;
+  id: number;
   image: string;
   name: PokemonName['english'];
 };
