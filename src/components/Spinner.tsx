@@ -1,7 +1,7 @@
 // https://flowbite.com/docs/components/spinner/
 export const Spinner = () => {
   return (
-    <div role="status">
+    <div role="status" className="flex justify-center p-5">
       <svg
         aria-hidden="true"
         className="mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
