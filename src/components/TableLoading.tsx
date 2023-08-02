@@ -1,7 +1,6 @@
 import { SerializedPokemon } from '@/types';
 
 import { Spinner } from './Spinner';
-import { ReactElement } from 'react';
 
 interface Props {
   children: React.ReactNode;
@@ -11,7 +10,7 @@ const TableFragment = ({ children }: Props) => {
   return (
     <tr>
       <td colSpan={8} className="text-center">
-        children
+        {children}
       </td>
     </tr>
   );

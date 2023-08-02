@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { motion } from 'framer-motion';
 import getConfig from 'next/config';
 import Head from 'next/head';
-import { ChangeEvent, useCallback, useEffect, useState } from 'react';
+import { ChangeEvent, useCallback, useState } from 'react';
 import useSWR from 'swr';
 
 import { Cards } from '@/components/Cards';
