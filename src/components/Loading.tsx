@@ -7,18 +7,20 @@ const Loading = (
   error: Error,
   data: SerializedPokemon[] | undefined,
   children: JSX.Element | undefined,
-  loading: JSX.Element = (
-    <div className="flex justify-center">
-      <Spinner />
-    </div>
-  ),
-  noData: JSX.Element = <div className="flex justify-center">No data to show</div>,
 ) => {
   return (
     <>
-      {isValidating && !error ? loading : null}
+      {isValidating && !error ? (
+        <div className="flex justify-center">
+          <Spinner />
+        </div>
+      ) : null}
       {error ? <div className="flex justify-center">{error.message}</div> : null}
-      {!data?.length && !isValidating && !error ? noData : children}
+      {!data?.length && !isValidating && !error ? (
+        <div className="flex justify-center">No data to show</div>
+      ) : (
+        children
+      )}
     </>
   );
 };
