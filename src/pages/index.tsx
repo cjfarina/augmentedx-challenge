@@ -29,16 +29,6 @@ const Home = ({ version }: { version: string }) => {
     setSearch(event.target.value);
   }, []);
 
-  useEffect(() => {
-    const currentView = window.localStorage.getItem('view');
-    if (currentView !== null) setView(currentView as Views);
-  }, []);
-
-  useEffect(() => {
-    if (!view) return;
-    window?.localStorage.setItem('view', view);
-  }, [view]);
-
   const renderContent = () => {
     return view === 'cards' ? (
       Loading(isValidating, error, response?.data, <Cards data={response?.data ?? []} />)
