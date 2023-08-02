@@ -23,7 +23,7 @@ const Home = ({ version }: { version: string }) => {
     axios(`/api/pokemons?name=${search}`),
   );
 
-  const [view, setView] = useState<Views>();
+  const [view, setView] = useState<Views>('cards');
 
   const handleSearch = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
