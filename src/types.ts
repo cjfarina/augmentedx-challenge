@@ -26,3 +26,6 @@ export type SerializedPokemon = Omit<Pokemon, 'name'> & {
   image: string;
   name: PokemonName['english'];
 };
+
+export type SortKeys = keyof PokemonStats;
+export type SortOrder = 'ascn' | 'desc';
