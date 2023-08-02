@@ -11,23 +11,25 @@ const TableLoading = (
   return (
     <>
       {isValidating && !error ? (
-        <td colSpan={8} className="text-center">
-          <Spinner />
-        </td>
+        <tr>
+          <td colSpan={8} className="text-center">
+            <Spinner />
+          </td>
+        </tr>
       ) : null}
       {error ? (
-        <div className="flex justify-center">
-          {
-            <td colSpan={8} className="text-center">
-              <div className="p-5">{error.message}</div>
-            </td>
-          }
-        </div>
+        <tr>
+          <td colSpan={8} className="text-center">
+            <div className="p-5">{error.message}</div>
+          </td>
+        </tr>
       ) : null}
       {!data?.length && !isValidating && !error ? (
-        <td colSpan={8} className="text-center">
-          <div className="p-5">No data to show</div>
-        </td>
+        <tr>
+          <td colSpan={8} className="text-center">
+            <div className="p-5">No data to show</div>
+          </td>
+        </tr>
       ) : (
         children
       )}
