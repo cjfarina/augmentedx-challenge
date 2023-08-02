@@ -7,10 +7,7 @@
       "chinese": "妙蛙种子",
       "french": "Bulbizarre"
     },
-    "type": [
-      "Grass",
-      "Poison"
-    ],
+    "type": ["Grass", "Poison"],
     "stats": {
       "HP": "45",
       "Attack": "49",
@@ -28,10 +25,7 @@
       "chinese": "妙蛙草",
       "french": "Herbizarre"
     },
-    "type": [
-      "Grass",
-      "Poison"
-    ],
+    "type": ["Grass", "Poison"],
     "stats": {
       "HP": "60",
       "Attack": "62",
@@ -49,10 +43,7 @@
       "chinese": "妙蛙花",
       "french": "Florizarre"
     },
-    "type": [
-      "Grass",
-      "Poison"
-    ],
+    "type": ["Grass", "Poison"],
     "stats": {
       "HP": "80",
       "Attack": "82",
@@ -70,9 +61,7 @@
       "chinese": "小火龙",
       "french": "Salamèche"
     },
-    "type": [
-      "Fire"
-    ],
+    "type": ["Fire"],
     "stats": {
       "HP": "39",
       "Attack": "52",
@@ -90,9 +79,7 @@
       "chinese": "火恐龙",
       "french": "Reptincel"
     },
-    "type": [
-      "Fire"
-    ],
+    "type": ["Fire"],
     "stats": {
       "HP": "58",
       "Attack": "64",
@@ -110,10 +97,7 @@
       "chinese": "喷火龙",
       "french": "Dracaufeu"
     },
-    "type": [
-      "Fire",
-      "Flying"
-    ],
+    "type": ["Fire", "Flying"],
     "stats": {
       "HP": "78",
       "Attack": "84",
@@ -131,9 +115,7 @@
       "chinese": "杰尼龟",
       "french": "Carapuce"
     },
-    "type": [
-      "Water"
-    ],
+    "type": ["Water"],
     "stats": {
       "HP": "44",
       "Attack": "48",
@@ -151,9 +133,7 @@
       "chinese": "卡咪龟",
       "french": "Carabaffe"
     },
-    "type": [
-      "Water"
-    ],
+    "type": ["Water"],
     "stats": {
       "HP": "59",
       "Attack": "63",
@@ -171,9 +151,7 @@
       "chinese": "水箭龟",
       "french": "Tortank"
     },
-    "type": [
-      "Water"
-    ],
+    "type": ["Water"],
     "stats": {
       "HP": "79",
       "Attack": "83",
@@ -191,9 +169,7 @@
       "chinese": "绿毛虫",
       "french": "Chenipan"
     },
-    "type": [
-      "Bug"
-    ],
+    "type": ["Bug"],
     "stats": {
       "HP": "45",
       "Attack": "30",
@@ -211,9 +187,7 @@
       "chinese": "铁甲蛹",
       "french": "Chrysacier"
     },
-    "type": [
-      "Bug"
-    ],
+    "type": ["Bug"],
     "stats": {
       "HP": "50",
       "Attack": "20",
@@ -231,10 +205,7 @@
       "chinese": "巴大蝶",
       "french": "Papilusion"
     },
-    "type": [
-      "Bug",
-      "Flying"
-    ],
+    "type": ["Bug", "Flying"],
     "stats": {
       "HP": "60",
       "Attack": "45",
@@ -252,10 +223,7 @@
       "chinese": "独角虫",
       "french": "Aspicot"
     },
-    "type": [
-      "Bug",
-      "Poison"
-    ],
+    "type": ["Bug", "Poison"],
     "stats": {
       "HP": "40",
       "Attack": "35",
@@ -273,10 +241,7 @@
       "chinese": "铁壳蛹",
       "french": "Coconfort"
     },
-    "type": [
-      "Bug",
-      "Poison"
-    ],
+    "type": ["Bug", "Poison"],
     "stats": {
       "HP": "45",
       "Attack": "25",
@@ -294,10 +259,7 @@
       "chinese": "大针蜂",
       "french": "Dardargnan"
     },
-    "type": [
-      "Bug",
-      "Poison"
-    ],
+    "type": ["Bug", "Poison"],
     "stats": {
       "HP": "65",
       "Attack": "90",
@@ -315,10 +277,7 @@
       "chinese": "波波",
       "french": "Roucool"
     },
-    "type": [
-      "Normal",
-      "Flying"
-    ],
+    "type": ["Normal", "Flying"],
     "stats": {
       "HP": "40",
       "Attack": "45",
@@ -336,10 +295,7 @@
       "chinese": "比比鸟",
       "french": "Roucoups"
     },
-    "type": [
-      "Normal",
-      "Flying"
-    ],
+    "type": ["Normal", "Flying"],
     "stats": {
       "HP": "63",
       "Attack": "60",
@@ -357,10 +313,7 @@
       "chinese": "大比鸟",
       "french": "Roucarnage"
     },
-    "type": [
-      "Normal",
-      "Flying"
-    ],
+    "type": ["Normal", "Flying"],
     "stats": {
       "HP": "83",
       "Attack": "80",
@@ -378,9 +331,7 @@
       "chinese": "小拉达",
       "french": "Rattata"
     },
-    "type": [
-      "Normal"
-    ],
+    "type": ["Normal"],
     "stats": {
       "HP": "30",
       "Attack": "56",
@@ -398,9 +349,7 @@
       "chinese": "拉达",
       "french": "Rattatac"
     },
-    "type": [
-      "Normal"
-    ],
+    "type": ["Normal"],
     "stats": {
       "HP": "55",
       "Attack": "81",
@@ -418,10 +367,7 @@
       "chinese": "烈雀",
       "french": "Piafabec"
     },
-    "type": [
-      "Normal",
-      "Flying"
-    ],
+    "type": ["Normal", "Flying"],
     "stats": {
       "HP": "40",
       "Attack": "60",
@@ -439,10 +385,7 @@
       "chinese": "大嘴雀",
       "french": "Rapasdepic"
     },
-    "type": [
-      "Normal",
-      "Flying"
-    ],
+    "type": ["Normal", "Flying"],
     "stats": {
       "HP": "65",
       "Attack": "90",
@@ -460,9 +403,7 @@
       "chinese": "阿柏蛇",
       "french": "Abo"
     },
-    "type": [
-      "Poison"
-    ],
+    "type": ["Poison"],
     "stats": {
       "HP": "35",
       "Attack": "60",
@@ -480,9 +421,7 @@
       "chinese": "阿柏怪",
       "french": "Arbok"
     },
-    "type": [
-      "Poison"
-    ],
+    "type": ["Poison"],
     "stats": {
       "HP": "60",
       "Attack": "95",
@@ -500,9 +439,7 @@
       "chinese": "皮卡丘",
       "french": "Pikachu"
     },
-    "type": [
-      "Electric"
-    ],
+    "type": ["Electric"],
     "stats": {
       "HP": "35",
       "Attack": "55",
@@ -520,9 +457,7 @@
       "chinese": "雷丘",
       "french": "Raichu"
     },
-    "type": [
-      "Electric"
-    ],
+    "type": ["Electric"],
     "stats": {
       "HP": "60",
       "Attack": "90",
@@ -540,9 +475,7 @@
       "chinese": "穿山鼠",
       "french": "Sabelette"
     },
-    "type": [
-      "Ground"
-    ],
+    "type": ["Ground"],
     "stats": {
       "HP": "50",
       "Attack": "75",
@@ -560,9 +493,7 @@
       "chinese": "穿山王",
       "french": "Sablaireau"
     },
-    "type": [
-      "Ground"
-    ],
+    "type": ["Ground"],
     "stats": {
       "HP": "75",
       "Attack": "100",
@@ -580,9 +511,7 @@
       "chinese": "尼多兰",
       "french": "Nidoran♀"
     },
-    "type": [
-      "Poison"
-    ],
+    "type": ["Poison"],
     "stats": {
       "HP": "55",
       "Attack": "47",
@@ -600,9 +529,7 @@
       "chinese": "尼多娜",
       "french": "Nidorina"
     },
-    "type": [
-      "Poison"
-    ],
+    "type": ["Poison"],
     "stats": {
       "HP": "70",
       "Attack": "62",
@@ -620,10 +547,7 @@
       "chinese": "尼多后",
       "french": "Nidoqueen"
     },
-    "type": [
-      "Poison",
-      "Ground"
-    ],
+    "type": ["Poison", "Ground"],
     "stats": {
       "HP": "90",
       "Attack": "92",
@@ -641,9 +565,7 @@
       "chinese": "尼多朗",
       "french": "Nidoran♂"
     },
-    "type": [
-      "Poison"
-    ],
+    "type": ["Poison"],
     "stats": {
       "HP": "46",
       "Attack": "57",
@@ -661,9 +583,7 @@
       "chinese": "尼多力诺",
       "french": "Nidorino"
     },
-    "type": [
-      "Poison"
-    ],
+    "type": ["Poison"],
     "stats": {
       "HP": "61",
       "Attack": "72",
@@ -681,10 +601,7 @@
       "chinese": "尼多王",
       "french": "Nidoking"
     },
-    "type": [
-      "Poison",
-      "Ground"
-    ],
+    "type": ["Poison", "Ground"],
     "stats": {
       "HP": "81",
       "Attack": "102",
@@ -702,9 +619,7 @@
       "chinese": "皮皮",
       "french": "Mélofée"
     },
-    "type": [
-      "Fairy"
-    ],
+    "type": ["Fairy"],
     "stats": {
       "HP": "70",
       "Attack": "45",
@@ -722,9 +637,7 @@
       "chinese": "皮可西",
       "french": "Mélodelfe"
     },
-    "type": [
-      "Fairy"
-    ],
+    "type": ["Fairy"],
     "stats": {
       "HP": "95",
       "Attack": "70",
@@ -742,9 +655,7 @@
       "chinese": "六尾",
       "french": "Goupix"
     },
-    "type": [
-      "Fire"
-    ],
+    "type": ["Fire"],
     "stats": {
       "HP": "38",
       "Attack": "41",
@@ -762,9 +673,7 @@
       "chinese": "九尾",
       "french": "Feunard"
     },
-    "type": [
-      "Fire"
-    ],
+    "type": ["Fire"],
     "stats": {
       "HP": "73",
       "Attack": "76",
@@ -782,10 +691,7 @@
       "chinese": "胖丁",
       "french": "Rondoudou"
     },
-    "type": [
-      "Normal",
-      "Fairy"
-    ],
+    "type": ["Normal", "Fairy"],
     "stats": {
       "HP": "115",
       "Attack": "45",
@@ -803,10 +709,7 @@
       "chinese": "胖可丁",
       "french": "Grodoudou"
     },
-    "type": [
-      "Normal",
-      "Fairy"
-    ],
+    "type": ["Normal", "Fairy"],
     "stats": {
       "HP": "140",
       "Attack": "70",
@@ -824,10 +727,7 @@
       "chinese": "超音蝠",
       "french": "Nosferapti"
     },
-    "type": [
-      "Poison",
-      "Flying"
-    ],
+    "type": ["Poison", "Flying"],
     "stats": {
       "HP": "40",
       "Attack": "45",
@@ -845,10 +745,7 @@
       "chinese": "大嘴蝠",
       "french": "Nosferalto"
     },
-    "type": [
-      "Poison",
-      "Flying"
-    ],
+    "type": ["Poison", "Flying"],
     "stats": {
       "HP": "75",
       "Attack": "80",
@@ -866,10 +763,7 @@
       "chinese": "走路草",
       "french": "Mystherbe"
     },
-    "type": [
-      "Grass",
-      "Poison"
-    ],
+    "type": ["Grass", "Poison"],
     "stats": {
       "HP": "45",
       "Attack": "50",
@@ -887,10 +781,7 @@
       "chinese": "臭臭花",
       "french": "Ortide"
     },
-    "type": [
-      "Grass",
-      "Poison"
-    ],
+    "type": ["Grass", "Poison"],
     "stats": {
       "HP": "60",
       "Attack": "65",
@@ -908,10 +799,7 @@
       "chinese": "霸王花",
       "french": "Rafflesia"
     },
-    "type": [
-      "Grass",
-      "Poison"
-    ],
+    "type": ["Grass", "Poison"],
     "stats": {
       "HP": "75",
       "Attack": "80",
@@ -929,10 +817,7 @@
       "chinese": "派拉斯",
       "french": "Paras"
     },
-    "type": [
-      "Bug",
-      "Grass"
-    ],
+    "type": ["Bug", "Grass"],
     "stats": {
       "HP": "35",
       "Attack": "70",
@@ -950,10 +835,7 @@
       "chinese": "派拉斯特",
       "french": "Parasect"
     },
-    "type": [
-      "Bug",
-      "Grass"
-    ],
+    "type": ["Bug", "Grass"],
     "stats": {
       "HP": "60",
       "Attack": "95",
@@ -971,10 +853,7 @@
       "chinese": "毛球",
       "french": "Mimitoss"
     },
-    "type": [
-      "Bug",
-      "Poison"
-    ],
+    "type": ["Bug", "Poison"],
     "stats": {
       "HP": "60",
       "Attack": "55",
@@ -992,10 +871,7 @@
       "chinese": "摩鲁蛾",
       "french": "Aéromite"
     },
-    "type": [
-      "Bug",
-      "Poison"
-    ],
+    "type": ["Bug", "Poison"],
     "stats": {
       "HP": "70",
       "Attack": "65",
@@ -1013,9 +889,7 @@
       "chinese": "地鼠",
       "french": "Taupiqueur"
     },
-    "type": [
-      "Ground"
-    ],
+    "type": ["Ground"],
     "stats": {
       "HP": "10",
       "Attack": "55",
