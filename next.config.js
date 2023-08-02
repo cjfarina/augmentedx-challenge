@@ -8,6 +8,9 @@ module.exports = (phase) => {
   const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
+    images: {
+      domains: ['assets.pokemon.com'],
+    },
   };
 
   nextConfig.publicRuntimeConfig = {
