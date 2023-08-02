@@ -1,4 +1,5 @@
 import { SerializedPokemon } from '@/types';
+
 import { Spinner } from './Spinner';
 
 const TableLoading = (

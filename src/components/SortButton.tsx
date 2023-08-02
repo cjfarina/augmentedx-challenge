@@ -1,5 +1,6 @@
-import { SortKeys, SortOrder } from '@/types';
 import { MouseEventHandler } from 'react';
+
+import { SortKeys, SortOrder } from '@/types';
 
 function SortButton({
   sortOrder,

@@ -7,8 +7,8 @@ import useSWR from 'swr';
 import { SerializedPokemon, SortKeys, SortOrder } from '@/types';
 import { fadeIn } from '@/utils/animations';
 
-import TableLoading from './TableLoading';
 import SortButton from './SortButton';
+import TableLoading from './TableLoading';
 
 export type TableProps = {
   search: string;
