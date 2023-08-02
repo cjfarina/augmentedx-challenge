@@ -20,7 +20,26 @@ exports[`Cards should render list of pokemons 1`] = `
         >
           <div
             class="flex gap-1 flex-col items-start"
-          />
+          >
+            <div
+              class="flex flex-wrap justify-center space-x-2"
+            >
+              <span
+                class="px-4 py-2 rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease"
+              >
+                Grass
+              </span>
+            </div>
+            <div
+              class="flex flex-wrap justify-center space-x-2"
+            >
+              <span
+                class="px-4 py-2 rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease"
+              >
+                Poison
+              </span>
+            </div>
+          </div>
           <img
             alt="Bulbasaur"
             aria-label="Bulbasaur"
@@ -46,7 +65,26 @@ exports[`Cards should render list of pokemons 1`] = `
         >
           <div
             class="flex gap-1 flex-col items-start"
-          />
+          >
+            <div
+              class="flex flex-wrap justify-center space-x-2"
+            >
+              <span
+                class="px-4 py-2 rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease"
+              >
+                Grass
+              </span>
+            </div>
+            <div
+              class="flex flex-wrap justify-center space-x-2"
+            >
+              <span
+                class="px-4 py-2 rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease"
+              >
+                Poison
+              </span>
+            </div>
+          </div>
           <img
             alt="Ivysaur"
             aria-label="Ivysaur"
