@@ -1,4 +1,4 @@
-import { Pokemon, SerializedPokemon } from '@/types';
+import { Pokemon, SerializedPokemon, SortKeys, SortOrder } from '@/types';
 
 export const getPokemonImage = (pokemonId: number): string => {
   return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemonId
@@ -18,13 +18,23 @@ export const findPokemon = (pokemonData: Pokemon[], name: string) =>
 export const filterPokemons = (
   pokemons: Pokemon[],
   filterQueryName: string | RegExp,
+  sortKey: SortKeys | null,
+  sortOrder: SortOrder | null,
 ): SerializedPokemon[] => {
   const filteredPokemons = pokemons
     .filter((pokemon) => pokemon.name.english.match(filterQueryName))
-    .slice(0, 10)
-    .map(serializePokemon);
+    .slice(0, 10);
 
-  return filteredPokemons;
+  if (sortKey) {
+    const reverse = sortOrder === 'desc' ? -1 : 1;
+    filteredPokemons.sort((a, b) => {
+      let sortValue;
+      sortValue = Number(a.stats[sortKey]) > Number(b.stats[sortKey]) ? 1 : -1;
+      return sortValue * reverse;
+    });
+  }
+
+  return filteredPokemons.map(serializePokemon);
 };
 
 export const getRandomInt = (min: number, max: number) => {
