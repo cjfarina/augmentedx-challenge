@@ -1,6 +1,21 @@
 import { SerializedPokemon } from '@/types';
 
 import { Spinner } from './Spinner';
+import { ReactElement } from 'react';
+
+interface Props {
+  children: React.ReactNode;
+}
+
+const TableFragment = ({ children }: Props) => {
+  return (
+    <tr>
+      <td colSpan={8} className="text-center">
+        children
+      </td>
+    </tr>
+  );
+};
 
 const TableLoading = (
   isValidating: boolean,
@@ -11,25 +26,19 @@ const TableLoading = (
   return (
     <>
       {isValidating && !error ? (
-        <tr>
-          <td colSpan={8} className="text-center">
-            <Spinner />
-          </td>
-        </tr>
+        <TableFragment>
+          <Spinner />
+        </TableFragment>
       ) : null}
       {error ? (
-        <tr>
-          <td colSpan={8} className="text-center">
-            <div className="p-5">{error.message}</div>
-          </td>
-        </tr>
+        <TableFragment>
+          <div className="p-5">{error.message}</div>
+        </TableFragment>
       ) : null}
       {!data?.length && !isValidating && !error ? (
-        <tr>
-          <td colSpan={8} className="text-center">
-            <div className="p-5">No data to show</div>
-          </td>
-        </tr>
+        <TableFragment>
+          <div className="p-5">No data to show</div>
+        </TableFragment>
       ) : (
         children
       )}
