@@ -2,12 +2,12 @@ import axios, { AxiosResponse } from 'axios';
 import { motion } from 'framer-motion';
 import getConfig from 'next/config';
 import Head from 'next/head';
-import { ChangeEvent, useCallback, useState } from 'react';
+import { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import useSWR from 'swr';
 
 import { Cards } from '@/components/Cards';
 import { Container } from '@/components/Container';
-import { Spinner } from '@/components/Spinner';
+import Loading from '@/components/Loading';
 import { Table } from '@/components/Table';
 import { SerializedPokemon } from '@/types';
 
@@ -15,26 +15,36 @@ type Views = 'cards' | 'table' | 'list';
 
 const Home = ({ version }: { version: string }) => {
   const [search, setSearch] = useState('');
-  const [view, setView] = useState<Views>('cards');
-
-  const { data: response } = useSWR<AxiosResponse<SerializedPokemon[]>>(`pokemons-${search}`, () =>
+  const {
+    isValidating,
+    error,
+    data: response,
+  } = useSWR<AxiosResponse<SerializedPokemon[]>>(`pokemons-${search}`, () =>
     axios(`/api/pokemons?name=${search}`),
   );
 
+  const [view, setView] = useState<Views>();
+
   const handleSearch = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    setView('cards');
     setSearch(event.target.value);
   }, []);
 
+  useEffect(() => {
+    const currentView = window.localStorage.getItem('view');
+    if (currentView !== null) setView(currentView as Views);
+  }, []);
+
+  useEffect(() => {
+    if (!view) return;
+    window?.localStorage.setItem('view', view);
+  }, [view]);
+
   const renderContent = () => {
-    if (!response) {
-      return (
-        <div className="flex justify-center">
-          <Spinner />
-        </div>
-      );
-    }
-    return view === 'cards' ? <Cards data={response.data} /> : <Table />;
+    return view === 'cards' ? (
+      Loading(isValidating, error, response?.data, <Cards data={response?.data ?? []} />)
+    ) : (
+      <Table search={search} />
+    );
   };
 
   return (
