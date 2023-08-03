@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { motion } from 'framer-motion';
 import getConfig from 'next/config';
 import Head from 'next/head';
-import { ChangeEvent, useCallback, useState } from 'react';
+import { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import useSWR from 'swr';
 
 import { Cards } from '@/components/Cards';
@@ -15,19 +15,32 @@ type Views = 'cards' | 'table' | 'list';
 
 const Home = ({ version }: { version: string }) => {
   const [search, setSearch] = useState('');
+
+  const [view, setView] = useState<Views>();
+
+  //Add conditional fetching, Only fetches on view state 
   const {
     isValidating,
     error,
     data: response,
-  } = useSWR<AxiosResponse<SerializedPokemon[]>>(`pokemons-${search}`, () =>
-    axios(`/api/pokemons?name=${search}`),
+  } = useSWR<AxiosResponse<SerializedPokemon[]>>(
+    view === 'cards' ? `pokemons-${search}` : null,
+    () => axios(`/api/pokemons?name=${search}`),
   );
-
-  const [view, setView] = useState<Views>('cards');
 
   const handleSearch = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
   }, []);
+
+  useEffect(() => {
+    const currentView = window.localStorage.getItem('view');
+    if (currentView !== null) setView(currentView as Views);
+  }, []);
+
+  useEffect(() => {
+    if (!view) return;
+    window?.localStorage.setItem('view', view);
+  }, [view]);
 
   const renderContent = () => {
     return view === 'cards' ? (
