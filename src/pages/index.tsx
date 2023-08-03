@@ -18,7 +18,7 @@ const Home = ({ version }: { version: string }) => {
 
   const [view, setView] = useState<Views>();
 
-  //Add conditional fetching, Only fetches on view state 
+  //Add conditional fetching, Only fetches on view state
   const {
     isValidating,
     error,
