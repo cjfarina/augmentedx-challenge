@@ -1,7 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 
@@ -12,6 +11,7 @@ import { SerializedPokemon } from '@/types';
 import { fadeInUp, stagger } from '@/utils/animations';
 
 const Pokemon: React.FC = () => {
+  const router = useRouter();
   const { query, isReady } = useRouter();
   const { data: response, error } = useSWR<AxiosResponse<SerializedPokemon>>(
     isReady ? `/api/pokemons/${query.name || ''}` : null,
@@ -34,7 +34,7 @@ const Pokemon: React.FC = () => {
       <Container>
         <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
           <header className="my-5 text-2xl">
-            <Link href="/">← Back</Link>
+            <button onClick={() => router.back()}>← Back</button>
           </header>
 
           {response?.data ? (
