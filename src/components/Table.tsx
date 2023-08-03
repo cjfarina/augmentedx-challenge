@@ -1,6 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useCallback, useState } from 'react';
 import useSWR from 'swr';
 
@@ -93,18 +94,26 @@ export const Table = ({ search }: TableProps) => {
                   className="bg-white border-b  bg-slate-50 border-slate-300"
                 >
                   <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    <div
-                      className="ml-auto rounded-lg border-slate-300 border bg-white"
-                      style={{ maxWidth: 120 }}
+                    <Link
+                      key={pokemon.id}
+                      href={`/pokemon/${pokemon.name}`}
+                      data-testid={`pokemon-${pokemon.id}`}
                     >
-                      <Image
-                        src={pokemon.image}
-                        aria-label={pokemon.name}
-                        alt={pokemon.name}
-                        width={120}
-                        height={120}
-                      />
-                    </div>
+                      <motion.div
+                        className="ml-auto rounded-lg border-slate-300 border bg-white cursor-pointer"
+                        style={{ maxWidth: 120, minWidth: 50 }}
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 1 }}
+                      >
+                        <Image
+                          src={pokemon.image}
+                          aria-label={pokemon.name}
+                          alt={pokemon.name}
+                          width={120}
+                          height={120}
+                        />
+                      </motion.div>
+                    </Link>
                   </td>
                   <td className="px-6 py-4">{pokemon.name}</td>
                   <td className="px-6 py-4">{pokemon.stats.HP}</td>
